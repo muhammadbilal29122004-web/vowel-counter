@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Marry Me? ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <!-- Floating background particles -->
+  <div class="floating-hearts-container" id="hearts-bg"></div>
+
+  <!-- Ambient Glow Effects -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <main class="proposal-container" id="main-card">
+    <div class="glass-card">
+      <!-- Animated Heart Graphic -->
+      <div class="heart-wrapper">
+        <div class="beating-heart">
+          <svg viewBox="0 0 32 29.6" class="heart-svg">
+            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,16,21.2,16,21.2s16-11.8,16-21.2
+            C32,3.8,28.2,0,23.6,0z"/>
+          </svg>
+          <div class="sparkle sparkle-1">✨</div>
+          <div class="sparkle sparkle-2">💖</div>
+          <div class="sparkle sparkle-3">✨</div>
+        </div>
+      </div>
+
+      <div class="tag-badge">Special Question For You 💌</div>
+
+      <h1 class="proposal-heading">Will you marry me?</h1>
+      <p class="proposal-subtext">You are my today and all of my tomorrows... ❤️</p>
+
+      <!-- Action Buttons -->
+      <div class="button-zone" id="btn-zone">
+        <button id="btn-yes" class="btn btn-yes" type="button">
+          <span class="btn-icon">💍</span>
+          <span class="btn-text">YES!</span>
+        </button>
+
+        <button id="btn-no" class="btn btn-no" type="button">
+          <span class="btn-icon">🙈</span>
+          <span class="btn-text" id="no-text">No</span>
+        </button>
+      </div>
+
+      <p class="hint-text" id="dodge-hint">Hint: Choose wisely! 😉</p>
+    </div>
+  </main>
+
+  <!-- Success Celebration Modal Screen -->
+  <div class="success-screen hidden" id="success-screen">
+    <div class="glass-card celebration-card">
+      <div class="celebration-rings">💍✨💖</div>
+      <h2 class="celebration-title">YAYYY! SHE SAID YES! 🎉</h2>
+      <p class="celebration-subtitle">I knew you would say YES! Forever &amp; Always together! ❤️</p>
+      <div class="infinity-symbol">♾️</div>
+      <button id="btn-restart" class="btn btn-replay" type="button">Ask Again 🔄</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
